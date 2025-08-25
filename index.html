@@ -1,0 +1,2343 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta
+      name="description"
+      content="Streaky Focus - Revolutionary focus and productivity app to eliminate phone addiction and build lasting focus habits. Transform your digital life today!"
+    />
+    <meta
+      name="keywords"
+      content="focus app, productivity, phone addiction, digital wellness, focus timer, habit tracker, mindfulness, concentration"
+    />
+    <meta name="author" content="Streaky Focus Team" />
+    <meta name="robots" content="index, follow" />
+
+    <!-- Open Graph Meta Tags -->
+    <meta
+      property="og:title"
+      content="Streaky Focus - Transform Phone Addiction into Focus Superpowers"
+    />
+    <meta
+      property="og:description"
+      content="Revolutionary focus app helping thousands overcome phone addiction and achieve laser-sharp focus. Join the productivity revolution!"
+    />
+    <meta
+      property="og:image"
+      content="https://streakyfocus.com/assets/og-image.jpg"
+    />
+    <meta property="og:url" content="https://streakyfocus.com" />
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="Streaky Focus" />
+
+    <!-- Twitter Card Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta
+      name="twitter:title"
+      content="Streaky Focus - Transform Phone Addiction into Focus"
+    />
+    <meta
+      name="twitter:description"
+      content="Join thousands using our revolutionary focus system to overcome phone addiction and achieve peak productivity!"
+    />
+    <meta
+      name="twitter:image"
+      content="https://streakyfocus.com/assets/twitter-card.jpg"
+    />
+    <meta name="twitter:site" content="@streakyfocus" />
+
+    <title>
+      Streaky Focus - Transform Phone Addiction into Focus Superpowers
+    </title>
+
+    <!-- Favicons -->
+    <link rel="icon" type="image/x-icon" href="/favicon.ico" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+    <link rel="manifest" href="/site.webmanifest" />
+
+    <!-- Preconnect for Performance -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <!-- Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Space+Grotesk:wght@300..700&family=Poppins:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="style.css" />
+
+    <!-- Critical CSS for Above-the-Fold Content -->
+    <style>
+      /* Critical CSS for immediate load */
+      body {
+        font-family: "Inter", -apple-system, BlinkMacSystemFont, sans-serif;
+        margin: 0;
+        padding: 0;
+        background: linear-gradient(135deg, #0a0f24 0%, #1a1f44 100%);
+        color: #ffffff;
+        overflow-x: hidden;
+        min-height: 100vh;
+      }
+
+      .loading-screen {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: linear-gradient(135deg, #0a0f24 0%, #1a1f44 100%);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        z-index: 9999;
+        flex-direction: column;
+        gap: 2rem;
+      }
+
+      .loader {
+        width: 80px;
+        height: 80px;
+        border: 4px solid rgba(255, 255, 255, 0.1);
+        border-left: 4px solid #ff6ec4;
+        border-radius: 50%;
+        animation: spin 1s linear infinite;
+      }
+
+      @keyframes spin {
+        0% {
+          transform: rotate(0deg);
+        }
+        100% {
+          transform: rotate(360deg);
+        }
+      }
+
+      .loading-text {
+        font-size: 1.2rem;
+        font-weight: 600;
+        color: #b8c2d9;
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Loading Screen -->
+    <div id="loading-screen" class="loading-screen">
+      <div class="loader"></div>
+      <div class="loading-text">
+        <div>Loading Focus Revolution...</div>
+        <div style="font-size: 0.9rem; opacity: 0.7; margin-top: 0.5rem">
+          Preparing your transformation
+        </div>
+      </div>
+    </div>
+
+    <!-- Skip Links for Accessibility -->
+    <div class="skip-links">
+      <a href="#main-content" class="skip-link">Skip to main content</a>
+      <a href="#navigation" class="skip-link">Skip to navigation</a>
+    </div>
+
+    <!-- Header -->
+    <header class="main-header" role="banner">
+      <nav class="nav-container" id="navigation">
+        <div class="nav-content">
+          <!-- Logo -->
+          <div class="logo-section">
+            <div class="logo-container">
+              <div class="logo-icon">
+                <span class="logo-emoji">🎯</span>
+                <div class="logo-glow"></div>
+              </div>
+              <div class="brand-info">
+                <h1 class="brand-name">Streaky Focus</h1>
+                <p class="brand-tagline">Focus Revolution</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Navigation Menu -->
+          <div class="nav-menu">
+            <a href="#home" class="nav-item active">
+              <span class="nav-icon">🏠</span>
+              <span class="nav-text">Home</span>
+            </a>
+            <a href="#problem" class="nav-item">
+              <span class="nav-icon">⚠️</span>
+              <span class="nav-text">Problem</span>
+            </a>
+            <a href="#solution" class="nav-item">
+              <span class="nav-icon">✨</span>
+              <span class="nav-text">Solution</span>
+            </a>
+            <a href="#features" class="nav-item">
+              <span class="nav-icon">⭐</span>
+              <span class="nav-text">Features</span>
+            </a>
+            <a href="#testimonials" class="nav-item">
+              <span class="nav-icon">💬</span>
+              <span class="nav-text">Reviews</span>
+            </a>
+            <a href="#pricing" class="nav-item">
+              <span class="nav-icon">💎</span>
+              <span class="nav-text">Pricing</span>
+            </a>
+          </div>
+
+          <!-- CTA Button -->
+          <div class="header-actions">
+            <button class="cta-button primary" onclick="scrollToDownload()">
+              <span class="btn-icon">📱</span>
+              <span class="btn-text">Download App</span>
+            </button>
+
+            <!-- Mobile Menu Toggle -->
+            <button
+              class="mobile-menu-toggle"
+              id="mobile-menu-toggle"
+              onclick="toggleMobileMenu()"
+            >
+              <span class="hamburger-line"></span>
+              <span class="hamburger-line"></span>
+              <span class="hamburger-line"></span>
+            </button>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <!-- Mobile Menu Overlay -->
+    <div class="mobile-menu-overlay" id="mobile-menu-overlay">
+      <div class="mobile-menu-backdrop" onclick="closeMobileMenu()"></div>
+      <div class="mobile-menu-container">
+        <div class="mobile-menu-header">
+          <div class="mobile-logo">
+            <span class="mobile-logo-icon">🎯</span>
+            <div class="mobile-brand">
+              <span class="mobile-brand-name">Streaky Focus</span>
+              <span class="mobile-brand-tag">Focus Revolution</span>
+            </div>
+          </div>
+          <button class="mobile-close" onclick="closeMobileMenu()">
+            <span class="close-icon">✕</span>
+          </button>
+        </div>
+
+        <nav class="mobile-nav">
+          <a href="#home" class="mobile-nav-item" onclick="closeMobileMenu()">
+            <span class="mobile-nav-icon">🏠</span>
+            <div class="mobile-nav-content">
+              <span class="mobile-nav-title">Home</span>
+              <span class="mobile-nav-desc">Back to top</span>
+            </div>
+            <span class="mobile-nav-arrow">→</span>
+          </a>
+
+          <a
+            href="#problem"
+            class="mobile-nav-item"
+            onclick="closeMobileMenu()"
+          >
+            <span class="mobile-nav-icon">⚠️</span>
+            <div class="mobile-nav-content">
+              <span class="mobile-nav-title">The Problem</span>
+              <span class="mobile-nav-desc">Phone addiction crisis</span>
+            </div>
+            <span class="mobile-nav-arrow">→</span>
+          </a>
+
+          <a
+            href="#solution"
+            class="mobile-nav-item"
+            onclick="closeMobileMenu()"
+          >
+            <span class="mobile-nav-icon">✨</span>
+            <div class="mobile-nav-content">
+              <span class="mobile-nav-title">Our Solution</span>
+              <span class="mobile-nav-desc">Revolutionary approach</span>
+            </div>
+            <span class="mobile-nav-arrow">→</span>
+          </a>
+
+          <a
+            href="#features"
+            class="mobile-nav-item"
+            onclick="closeMobileMenu()"
+          >
+            <span class="mobile-nav-icon">⭐</span>
+            <div class="mobile-nav-content">
+              <span class="mobile-nav-title">Features</span>
+              <span class="mobile-nav-desc">Powerful tools</span>
+            </div>
+            <span class="mobile-nav-arrow">→</span>
+          </a>
+
+          <a
+            href="#testimonials"
+            class="mobile-nav-item"
+            onclick="closeMobileMenu()"
+          >
+            <span class="mobile-nav-icon">💬</span>
+            <div class="mobile-nav-content">
+              <span class="mobile-nav-title">Success Stories</span>
+              <span class="mobile-nav-desc">Real transformations</span>
+            </div>
+            <span class="mobile-nav-arrow">→</span>
+          </a>
+
+          <a
+            href="#pricing"
+            class="mobile-nav-item"
+            onclick="closeMobileMenu()"
+          >
+            <span class="mobile-nav-icon">💎</span>
+            <div class="mobile-nav-content">
+              <span class="mobile-nav-title">Pricing</span>
+              <span class="mobile-nav-desc">Choose your plan</span>
+            </div>
+            <span class="mobile-nav-arrow">→</span>
+          </a>
+        </nav>
+
+        <div class="mobile-menu-footer">
+          <button
+            class="mobile-cta-button"
+            onclick="scrollToDownload(); closeMobileMenu()"
+          >
+            <span class="mobile-cta-icon">📱</span>
+            <span class="mobile-cta-text">Download App</span>
+          </button>
+
+          <div class="mobile-social-links">
+            <a href="#" class="mobile-social-link">
+              <span class="social-icon">📧</span>
+              <span class="social-text">Email</span>
+            </a>
+            <a href="#" class="mobile-social-link">
+              <span class="social-icon">🐦</span>
+              <span class="social-text">Twitter</span>
+            </a>
+            <a href="#" class="mobile-social-link">
+              <span class="social-icon">📘</span>
+              <span class="social-text">Facebook</span>
+            </a>
+            <a href="#" class="mobile-social-link">
+              <span class="social-icon">📸</span>
+              <span class="social-text">Instagram</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Main Content -->
+    <main id="main-content">
+      <!-- Hero Section -->
+      <section id="home" class="hero-section">
+        <div class="hero-background">
+          <div class="hero-gradient"></div>
+          <div class="floating-elements">
+            <div class="floating-element element-1">✨</div>
+            <div class="floating-element element-2">🎯</div>
+            <div class="floating-element element-3">⚡</div>
+            <div class="floating-element element-4">🚀</div>
+            <div class="floating-element element-5">💎</div>
+          </div>
+        </div>
+
+        <div class="hero-container">
+          <!-- Beta Badge -->
+          <div class="hero-announcement">
+            <div class="announcement-badge">
+              <span class="badge-icon">🚀</span>
+              <div class="badge-content">
+                <span class="badge-text">Revolutionary App Launch</span>
+                <span class="badge-highlight">50,000+ Early Users</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Hero Title -->
+          <div class="hero-title-section">
+            <h1 class="hero-title">
+              <span class="title-line">Transform Phone Addiction</span>
+              <span class="title-line highlight">into Focus Superpowers</span>
+            </h1>
+
+            <div class="title-decoration">
+              <div class="decoration-line"></div>
+              <span class="decoration-icon">✨</span>
+              <div class="decoration-line"></div>
+            </div>
+          </div>
+
+          <!-- Hero Subtitle -->
+          <div class="hero-subtitle">
+            <p class="subtitle-text">
+              Join
+              <strong class="user-proof">50,000+ focused achievers</strong>
+              who've conquered phone addiction with our revolutionary focus
+              system. Build epic focus streaks, unlock productivity rewards, and
+              transform your digital life forever.
+            </p>
+          </div>
+
+          <!-- Feature Pills -->
+          <div class="hero-features">
+            <div class="feature-pill">
+              <span class="pill-icon">🎯</span>
+              <span class="pill-text">Smart Focus Timer</span>
+            </div>
+            <div class="feature-pill">
+              <span class="pill-icon">🔥</span>
+              <span class="pill-text">Streak Tracking</span>
+            </div>
+            <div class="feature-pill">
+              <span class="pill-icon">🏆</span>
+              <span class="pill-text">Achievement System</span>
+            </div>
+            <div class="feature-pill">
+              <span class="pill-icon">📊</span>
+              <span class="pill-text">Progress Analytics</span>
+            </div>
+          </div>
+
+          <!-- Hero CTA -->
+          <div class="hero-cta">
+            <div class="cta-buttons">
+              <button
+                class="cta-button primary large"
+                onclick="scrollToDownload()"
+              >
+                <span class="btn-icon">📱</span>
+                <div class="btn-content">
+                  <span class="btn-text">Download Free App</span>
+                  <span class="btn-subtext">Start your transformation</span>
+                </div>
+              </button>
+
+              <button class="cta-button secondary large" onclick="watchDemo()">
+                <span class="btn-icon">▶️</span>
+                <div class="btn-content">
+                  <span class="btn-text">Watch Demo</span>
+                  <span class="btn-subtext">2 min overview</span>
+                </div>
+              </button>
+            </div>
+
+            <!-- Trust Signals -->
+            <div class="trust-signals">
+              <div class="trust-item">
+                <span class="trust-icon">⭐</span>
+                <span class="trust-text">4.9/5 Rating</span>
+              </div>
+              <div class="trust-item">
+                <span class="trust-icon">🔒</span>
+                <span class="trust-text">100% Private</span>
+              </div>
+              <div class="trust-item">
+                <span class="trust-icon">🆓</span>
+                <span class="trust-text">Free to Start</span>
+              </div>
+              <div class="trust-item">
+                <span class="trust-icon">⚡</span>
+                <span class="trust-text">Instant Results</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Social Proof -->
+          <div class="hero-social-proof">
+            <div class="social-proof-header">
+              <p class="social-proof-text">
+                Trusted by focus champions worldwide
+              </p>
+            </div>
+
+            <div class="user-avatars">
+              <div class="avatar-stack">
+                <div class="user-avatar">👨‍💻</div>
+                <div class="user-avatar">👩‍🎨</div>
+                <div class="user-avatar">👨‍🚀</div>
+                <div class="user-avatar">👩‍💼</div>
+                <div class="user-avatar">👨‍🔬</div>
+                <div class="avatar-more">+50K</div>
+              </div>
+            </div>
+
+            <div class="testimonial-preview">
+              <blockquote class="featured-testimonial">
+                "This app completely changed my relationship with my phone. I
+                went from 8 hours of mindless scrolling to 6 hours of deep work
+                daily!"
+              </blockquote>
+              <cite class="testimonial-author">
+                <span class="author-name">Sarah Chen</span>
+                <span class="author-title">Software Engineer</span>
+              </cite>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Live Stats Ticker -->
+      <section class="stats-ticker-section">
+        <div class="ticker-container">
+          <div class="ticker-content" id="live-ticker">
+            <div class="ticker-item">
+              <span class="ticker-icon">🔥</span>
+              <span class="ticker-text"
+                >Alex just completed a 90-day focus streak!</span
+              >
+            </div>
+            <div class="ticker-item">
+              <span class="ticker-icon">📱</span>
+              <span class="ticker-text"
+                >Maria reduced phone usage by 78% in 30 days</span
+              >
+            </div>
+            <div class="ticker-item">
+              <span class="ticker-icon">⚡</span>
+              <span class="ticker-text"
+                >Jordan unlocked "Focus Master" achievement</span
+              >
+            </div>
+            <div class="ticker-item">
+              <span class="ticker-icon">🏆</span>
+              <span class="ticker-text"
+                >Emma joined the 1000+ focus hours club</span
+              >
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Problem Section -->
+      <section id="problem" class="problem-section">
+        <div class="section-container">
+          <div class="section-header">
+            <div class="section-badge danger">
+              <span class="badge-icon">⚠️</span>
+              <span class="badge-text">The Crisis</span>
+            </div>
+
+            <h2 class="section-title">
+              The Phone Addiction <span class="danger-text">Epidemic</span>
+              is Destroying Lives
+            </h2>
+
+            <p class="section-subtitle">
+              We're living through the biggest attention crisis in human
+              history. Your phone has become a digital slot machine designed to
+              steal your focus, productivity, and happiness.
+            </p>
+          </div>
+
+          <!-- Problem Stats -->
+          <div class="problem-stats">
+            <div class="stats-grid">
+              <div class="stat-card alarming">
+                <div class="stat-icon">📱</div>
+                <div class="stat-number" data-count="7">7</div>
+                <div class="stat-label">Hours Daily</div>
+                <div class="stat-description">
+                  Average screen time destroying focus
+                </div>
+              </div>
+
+              <div class="stat-card alarming">
+                <div class="stat-icon">⚡</div>
+                <div class="stat-number" data-count="96">96</div>
+                <div class="stat-label">Times Checked</div>
+                <div class="stat-description">
+                  Phone checks per day interrupting flow
+                </div>
+              </div>
+
+              <div class="stat-card alarming">
+                <div class="stat-icon">🧠</div>
+                <div class="stat-number" data-count="23">23</div>
+                <div class="stat-label">Minutes Lost</div>
+                <div class="stat-description">
+                  Time to refocus after each distraction
+                </div>
+              </div>
+
+              <div class="stat-card alarming">
+                <div class="stat-icon">😰</div>
+                <div class="stat-number" data-count="89">89%</div>
+                <div class="stat-label">Feel Addicted</div>
+                <div class="stat-description">
+                  Of people admit phone dependency
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- The Addiction Cycle -->
+          <div class="addiction-cycle">
+            <h3 class="cycle-title">The Vicious Cycle of Phone Addiction</h3>
+
+            <div class="cycle-diagram">
+              <div class="cycle-step">
+                <div class="step-number">1</div>
+                <div class="step-icon">📱</div>
+                <div class="step-title">Trigger</div>
+                <div class="step-description">
+                  Notification, boredom, or habit triggers phone pickup
+                </div>
+              </div>
+
+              <div class="cycle-arrow">↓</div>
+
+              <div class="cycle-step">
+                <div class="step-number">2</div>
+                <div class="step-icon">🌪️</div>
+                <div class="step-title">Distraction</div>
+                <div class="step-description">
+                  Endless scrolling destroys focus and productivity
+                </div>
+              </div>
+
+              <div class="cycle-arrow">↓</div>
+
+              <div class="cycle-step">
+                <div class="step-number">3</div>
+                <div class="step-icon">😔</div>
+                <div class="step-title">Guilt</div>
+                <div class="step-description">
+                  Feeling guilty about wasted time and lost productivity
+                </div>
+              </div>
+
+              <div class="cycle-arrow">↓</div>
+
+              <div class="cycle-step">
+                <div class="step-number">4</div>
+                <div class="step-icon">🔄</div>
+                <div class="step-title">Repeat</div>
+                <div class="step-description">
+                  Cycle repeats 96+ times daily, getting worse each time
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Impact Statement -->
+          <div class="impact-statement">
+            <div class="impact-card">
+              <div class="impact-icon">💔</div>
+              <h4 class="impact-title">The Real Cost of Phone Addiction</h4>
+              <div class="impact-list">
+                <div class="impact-item">
+                  <span class="impact-bullet">•</span>
+                  <span class="impact-text"
+                    >Lost career opportunities due to poor focus</span
+                  >
+                </div>
+                <div class="impact-item">
+                  <span class="impact-bullet">•</span>
+                  <span class="impact-text"
+                    >Damaged relationships from constant distraction</span
+                  >
+                </div>
+                <div class="impact-item">
+                  <span class="impact-bullet">•</span>
+                  <span class="impact-text"
+                    >Increased anxiety and depression</span
+                  >
+                </div>
+                <div class="impact-item">
+                  <span class="impact-bullet">•</span>
+                  <span class="impact-text"
+                    >Destroyed sleep quality and physical health</span
+                  >
+                </div>
+                <div class="impact-item">
+                  <span class="impact-bullet">•</span>
+                  <span class="impact-text"
+                    >Loss of deep thinking and creativity</span
+                  >
+                </div>
+              </div>
+
+              <div class="impact-quote">
+                <blockquote>
+                  "I realized I was living my life in 30-second TikTok clips. I
+                  had completely lost the ability to focus on anything
+                  meaningful."
+                </blockquote>
+                <cite>- Former phone addict, now 200+ day focus streak</cite>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Solution Section -->
+      <section id="solution" class="solution-section">
+        <div class="section-container">
+          <div class="section-header">
+            <div class="section-badge success">
+              <span class="badge-icon">✨</span>
+              <span class="badge-text">The Solution</span>
+            </div>
+
+            <h2 class="section-title">
+              Revolutionary <span class="success-text">Focus System</span>
+              That Actually Works
+            </h2>
+
+            <p class="section-subtitle">
+              Unlike boring productivity apps, Streaky Focus uses psychology,
+              gamification, and proven behavioral science to make focus
+              addictive instead of your phone.
+            </p>
+          </div>
+
+          <!-- Solution Approach -->
+          <div class="solution-approach">
+            <div class="approach-grid">
+              <div class="approach-card featured">
+                <div class="approach-icon">🧠</div>
+                <h3>Behavioral Psychology</h3>
+                <p>
+                  We use the same psychology that makes social media addictive,
+                  but redirect it toward building focus habits instead of
+                  destroying them.
+                </p>
+
+                <div class="approach-features">
+                  <div class="feature-item">
+                    <span class="feature-check">✓</span>
+                    <span class="feature-text">Variable reward schedules</span>
+                  </div>
+                  <div class="feature-item">
+                    <span class="feature-check">✓</span>
+                    <span class="feature-text">Dopamine-driven motivation</span>
+                  </div>
+                  <div class="feature-item">
+                    <span class="feature-check">✓</span>
+                    <span class="feature-text"
+                      >Progressive achievement systems</span
+                    >
+                  </div>
+                </div>
+              </div>
+
+              <div class="approach-card">
+                <div class="approach-icon">🎯</div>
+                <h3>Smart Focus Timer</h3>
+                <p>
+                  Advanced Pomodoro technique with intelligent break detection,
+                  productivity analysis, and personalized focus recommendations.
+                </p>
+
+                <div class="approach-features">
+                  <div class="feature-item">
+                    <span class="feature-check">✓</span>
+                    <span class="feature-text"
+                      >Adaptive timing based on your patterns</span
+                    >
+                  </div>
+                  <div class="feature-item">
+                    <span class="feature-check">✓</span>
+                    <span class="feature-text"
+                      >Distraction blocking during focus</span
+                    >
+                  </div>
+                  <div class="feature-item">
+                    <span class="feature-check">✓</span>
+                    <span class="feature-text"
+                      >Ambient soundscapes and music</span
+                    >
+                  </div>
+                </div>
+              </div>
+
+              <div class="approach-card">
+                <div class="approach-icon">📊</div>
+                <h3>Progress Visualization</h3>
+                <p>
+                  Beautiful analytics that show your transformation journey,
+                  streak milestones, and productivity gains over time.
+                </p>
+
+                <div class="approach-features">
+                  <div class="feature-item">
+                    <span class="feature-check">✓</span>
+                    <span class="feature-text"
+                      >Daily, weekly, monthly insights</span
+                    >
+                  </div>
+                  <div class="feature-item">
+                    <span class="feature-check">✓</span>
+                    <span class="feature-text">Focus pattern recognition</span>
+                  </div>
+                  <div class="feature-item">
+                    <span class="feature-check">✓</span>
+                    <span class="feature-text"
+                      >Productivity optimization tips</span
+                    >
+                  </div>
+                </div>
+              </div>
+
+              <div class="approach-card">
+                <div class="approach-icon">🏆</div>
+                <h3>Achievement System</h3>
+                <p>
+                  Unlock badges, level up your focus rank, and earn rewards for
+                  consistent focus habits and major milestones.
+                </p>
+
+                <div class="approach-features">
+                  <div class="feature-item">
+                    <span class="feature-check">✓</span>
+                    <span class="feature-text"
+                      >50+ unique achievements to unlock</span
+                    >
+                  </div>
+                  <div class="feature-item">
+                    <span class="feature-check">✓</span>
+                    <span class="feature-text"
+                      >Streak milestone celebrations</span
+                    >
+                  </div>
+                  <div class="feature-item">
+                    <span class="feature-check">✓</span>
+                    <span class="feature-text"
+                      >Social sharing of accomplishments</span
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Transformation Journey -->
+          <div class="transformation-journey">
+            <h3 class="journey-title">Your 30-Day Transformation Journey</h3>
+
+            <div class="journey-timeline">
+              <div class="timeline-item">
+                <div class="timeline-day">Day 1-7</div>
+                <div class="timeline-content">
+                  <h4>Breaking the Habit</h4>
+                  <p>
+                    Learn to recognize triggers and build your first focus
+                    streaks. Small wins create momentum.
+                  </p>
+                  <div class="timeline-metrics">
+                    <span class="metric">📱 -2hrs screen time</span>
+                    <span class="metric">🎯 First 25min focus</span>
+                  </div>
+                </div>
+              </div>
+
+              <div class="timeline-item">
+                <div class="timeline-day">Day 8-14</div>
+                <div class="timeline-content">
+                  <h4>Building Momentum</h4>
+                  <p>
+                    Focus sessions become natural. Phone addiction weakens as
+                    new neural pathways form.
+                  </p>
+                  <div class="timeline-metrics">
+                    <span class="metric">🔥 7-day streak</span>
+                    <span class="metric">⚡ 1hr+ deep work</span>
+                  </div>
+                </div>
+              </div>
+
+              <div class="timeline-item">
+                <div class="timeline-day">Day 15-21</div>
+                <div class="timeline-content">
+                  <h4>Flow State Mastery</h4>
+                  <p>
+                    Extended focus becomes effortless. Productivity skyrockets
+                    as distractions lose their power.
+                  </p>
+                  <div class="timeline-metrics">
+                    <span class="metric">🚀 3hr+ focus blocks</span>
+                    <span class="metric">📈 400% productivity</span>
+                  </div>
+                </div>
+              </div>
+
+              <div class="timeline-item">
+                <div class="timeline-day">Day 22-30</div>
+                <div class="timeline-content">
+                  <h4>Complete Transformation</h4>
+                  <p>
+                    You've rewired your brain for focus. Phone addiction is
+                    replaced with productivity addiction.
+                  </p>
+                  <div class="timeline-metrics">
+                    <span class="metric">🏆 Focus Champion</span>
+                    <span class="metric">✨ Life transformed</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Before vs After -->
+          <div class="before-after">
+            <div class="comparison-container">
+              <div class="before-column">
+                <div class="comparison-header danger">
+                  <div class="comparison-icon">😵‍💫</div>
+                  <h4>Before Streaky Focus</h4>
+                </div>
+
+                <div class="comparison-list">
+                  <div class="comparison-item negative">
+                    <span class="item-icon">❌</span>
+                    <span class="item-text">7+ hours daily on phone</span>
+                  </div>
+                  <div class="comparison-item negative">
+                    <span class="item-icon">❌</span>
+                    <span class="item-text">Can't focus for 10 minutes</span>
+                  </div>
+                  <div class="comparison-item negative">
+                    <span class="item-icon">❌</span>
+                    <span class="item-text">Constant anxiety and FOMO</span>
+                  </div>
+                  <div class="comparison-item negative">
+                    <span class="item-icon">❌</span>
+                    <span class="item-text"
+                      >Procrastination on important tasks</span
+                    >
+                  </div>
+                  <div class="comparison-item negative">
+                    <span class="item-icon">❌</span>
+                    <span class="item-text">Guilty about wasted time</span>
+                  </div>
+                  <div class="comparison-item negative">
+                    <span class="item-icon">❌</span>
+                    <span class="item-text">Poor sleep and health</span>
+                  </div>
+                </div>
+              </div>
+
+              <div class="vs-divider">
+                <div class="vs-icon">⚡</div>
+                <div class="vs-text">VS</div>
+              </div>
+
+              <div class="after-column">
+                <div class="comparison-header success">
+                  <div class="comparison-icon">🚀</div>
+                  <h4>After Streaky Focus</h4>
+                </div>
+
+                <div class="comparison-list">
+                  <div class="comparison-item positive">
+                    <span class="item-icon">✅</span>
+                    <span class="item-text">2 hours productive phone use</span>
+                  </div>
+                  <div class="comparison-item positive">
+                    <span class="item-icon">✅</span>
+                    <span class="item-text">3+ hour deep work sessions</span>
+                  </div>
+                  <div class="comparison-item positive">
+                    <span class="item-icon">✅</span>
+                    <span class="item-text">Calm, focused, and present</span>
+                  </div>
+                  <div class="comparison-item positive">
+                    <span class="item-icon">✅</span>
+                    <span class="item-text">Complete important projects</span>
+                  </div>
+                  <div class="comparison-item positive">
+                    <span class="item-icon">✅</span>
+                    <span class="item-text"
+                      >Proud of daily accomplishments</span
+                    >
+                  </div>
+                  <div class="comparison-item positive">
+                    <span class="item-icon">✅</span>
+                    <span class="item-text">Excellent sleep and energy</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Features Section -->
+      <section id="features" class="features-section">
+        <div class="section-container">
+          <div class="section-header">
+            <div class="section-badge">
+              <span class="badge-icon">⭐</span>
+              <span class="badge-text">Core Features</span>
+            </div>
+
+            <h2 class="section-title">
+              Powerful Features That
+              <span class="gradient-text">Transform Lives</span>
+            </h2>
+
+            <p class="section-subtitle">
+              Every feature is designed with one goal: turn your phone addiction
+              into a focus superpower that compounds over time.
+            </p>
+          </div>
+
+          <!-- Features Grid -->
+          <div class="features-grid">
+            <div class="feature-card primary">
+              <div class="feature-header">
+                <div class="feature-icon">🎯</div>
+                <div class="feature-badge popular">Most Popular</div>
+              </div>
+
+              <h3 class="feature-title">Smart Focus Timer</h3>
+              <p class="feature-description">
+                Advanced Pomodoro technique that learns your patterns and
+                optimizes focus sessions for maximum productivity.
+              </p>
+
+              <div class="feature-highlights">
+                <div class="highlight-item">
+                  <span class="highlight-icon">⚡</span>
+                  <span class="highlight-text"
+                    >Adaptive timing based on your energy levels</span
+                  >
+                </div>
+                <div class="highlight-item">
+                  <span class="highlight-icon">🔇</span>
+                  <span class="highlight-text"
+                    >Automatic distraction blocking</span
+                  >
+                </div>
+                <div class="highlight-item">
+                  <span class="highlight-icon">🎵</span>
+                  <span class="highlight-text"
+                    >Focus-enhancing soundscapes</span
+                  >
+                </div>
+              </div>
+
+              <div class="feature-stats">
+                <div class="feature-stat">
+                  <span class="stat-number">300%</span>
+                  <span class="stat-label">Focus increase</span>
+                </div>
+                <div class="feature-stat">
+                  <span class="stat-number">25min</span>
+                  <span class="stat-label">Average session</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="feature-card">
+              <div class="feature-header">
+                <div class="feature-icon">🔥</div>
+                <div class="feature-badge new">New</div>
+              </div>
+
+              <h3 class="feature-title">Streak Tracking</h3>
+              <p class="feature-description">
+                Build momentum with visual streak tracking that makes
+                consistency addictive and celebrates every milestone.
+              </p>
+
+              <div class="feature-highlights">
+                <div class="highlight-item">
+                  <span class="highlight-icon">📈</span>
+                  <span class="highlight-text">Visual progress tracking</span>
+                </div>
+                <div class="highlight-item">
+                  <span class="highlight-icon">🏆</span>
+                  <span class="highlight-text">Milestone celebrations</span>
+                </div>
+                <div class="highlight-item">
+                  <span class="highlight-icon">⚡</span>
+                  <span class="highlight-text">Streak recovery tools</span>
+                </div>
+              </div>
+
+              <div class="feature-stats">
+                <div class="feature-stat">
+                  <span class="stat-number">90%</span>
+                  <span class="stat-label">Keep streaks 30d+</span>
+                </div>
+                <div class="feature-stat">
+                  <span class="stat-number">47</span>
+                  <span class="stat-label">Avg max streak</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="feature-card">
+              <div class="feature-header">
+                <div class="feature-icon">📊</div>
+              </div>
+
+              <h3 class="feature-title">Analytics Dashboard</h3>
+              <p class="feature-description">
+                Comprehensive insights into your focus patterns, productivity
+                trends, and transformation journey.
+              </p>
+
+              <div class="feature-highlights">
+                <div class="highlight-item">
+                  <span class="highlight-icon">📈</span>
+                  <span class="highlight-text"
+                    >Detailed productivity metrics</span
+                  >
+                </div>
+                <div class="highlight-item">
+                  <span class="highlight-icon">🎯</span>
+                  <span class="highlight-text">Focus pattern recognition</span>
+                </div>
+                <div class="highlight-item">
+                  <span class="highlight-icon">💡</span>
+                  <span class="highlight-text"
+                    >Personalized optimization tips</span
+                  >
+                </div>
+              </div>
+
+              <div class="feature-stats">
+                <div class="feature-stat">
+                  <span class="stat-number">15+</span>
+                  <span class="stat-label">Key metrics</span>
+                </div>
+                <div class="feature-stat">
+                  <span class="stat-number">12mo</span>
+                  <span class="stat-label">Data history</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="feature-card">
+              <div class="feature-header">
+                <div class="feature-icon">🚫</div>
+                <div class="feature-badge">Essential</div>
+              </div>
+
+              <h3 class="feature-title">App Blocking</h3>
+              <p class="feature-description">
+                Intelligent app blocking that prevents distractions during focus
+                time while allowing important calls and messages.
+              </p>
+
+              <div class="feature-highlights">
+                <div class="highlight-item">
+                  <span class="highlight-icon">🛡️</span>
+                  <span class="highlight-text"
+                    >Smart distraction prevention</span
+                  >
+                </div>
+                <div class="highlight-item">
+                  <span class="highlight-icon">☎️</span>
+                  <span class="highlight-text">Emergency calls allowed</span>
+                </div>
+                <div class="highlight-item">
+                  <span class="highlight-icon">⚙️</span>
+                  <span class="highlight-text">Customizable block lists</span>
+                </div>
+              </div>
+
+              <div class="feature-stats">
+                <div class="feature-stat">
+                  <span class="stat-number">85%</span>
+                  <span class="stat-label">Distraction reduction</span>
+                </div>
+                <div class="feature-stat">
+                  <span class="stat-number">100+</span>
+                  <span class="stat-label">Supported apps</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="feature-card">
+              <div class="feature-header">
+                <div class="feature-icon">🏆</div>
+              </div>
+
+              <h3 class="feature-title">Achievement System</h3>
+              <p class="feature-description">
+                Unlock badges, level up your focus rank, and earn rewards for
+                hitting milestones and building consistent habits.
+              </p>
+
+              <div class="feature-highlights">
+                <div class="highlight-item">
+                  <span class="highlight-icon">🏅</span>
+                  <span class="highlight-text">50+ unique achievements</span>
+                </div>
+                <div class="highlight-item">
+                  <span class="highlight-icon">📊</span>
+                  <span class="highlight-text">Progress leveling system</span>
+                </div>
+                <div class="highlight-item">
+                  <span class="highlight-icon">🎁</span>
+                  <span class="highlight-text">Unlock premium features</span>
+                </div>
+              </div>
+
+              <div class="feature-stats">
+                <div class="feature-stat">
+                  <span class="stat-number">50+</span>
+                  <span class="stat-label">Achievements</span>
+                </div>
+                <div class="feature-stat">
+                  <span class="stat-number">10</span>
+                  <span class="stat-label">Focus levels</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="feature-card">
+              <div class="feature-header">
+                <div class="feature-icon">👥</div>
+                <div class="feature-badge community">Community</div>
+              </div>
+
+              <h3 class="feature-title">Focus Community</h3>
+              <p class="feature-description">
+                Connect with like-minded focus champions, share achievements,
+                and stay motivated with supportive community features.
+              </p>
+
+              <div class="feature-highlights">
+                <div class="highlight-item">
+                  <span class="highlight-icon">🤝</span>
+                  <span class="highlight-text"
+                    >Connect with focus partners</span
+                  >
+                </div>
+                <div class="highlight-item">
+                  <span class="highlight-icon">📢</span>
+                  <span class="highlight-text">Share achievements</span>
+                </div>
+                <div class="highlight-item">
+                  <span class="highlight-icon">🎯</span>
+                  <span class="highlight-text">Group focus challenges</span>
+                </div>
+              </div>
+
+              <div class="feature-stats">
+                <div class="feature-stat">
+                  <span class="stat-number">50K+</span>
+                  <span class="stat-label">Active users</span>
+                </div>
+                <div class="feature-stat">
+                  <span class="stat-number">4.9★</span>
+                  <span class="stat-label">Community rating</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Feature Comparison -->
+          <div class="feature-comparison">
+            <h3 class="comparison-title">How We Compare to Other Apps</h3>
+
+            <div class="comparison-table-container">
+              <table class="comparison-table">
+                <thead>
+                  <tr>
+                    <th class="feature-column">Feature</th>
+                    <th class="app-column our-app">
+                      <div class="app-header">
+                        <span class="app-icon">🎯</span>
+                        <span class="app-name">Streaky Focus</span>
+                      </div>
+                    </th>
+                    <th class="app-column">
+                      <div class="app-header">
+                        <span class="app-name">Other Apps</span>
+                      </div>
+                    </th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="feature-name">Smart Focus Timer</td>
+                    <td class="feature-value positive">
+                      <span class="check-icon">✅</span>
+                      <span class="value-text">AI-Powered</span>
+                    </td>
+                    <td class="feature-value negative">
+                      <span class="cross-icon">❌</span>
+                      <span class="value-text">Basic only</span>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="feature-name">Achievement System</td>
+                    <td class="feature-value positive">
+                      <span class="check-icon">✅</span>
+                      <span class="value-text">50+ Achievements</span>
+                    </td>
+                    <td class="feature-value negative">
+                      <span class="cross-icon">❌</span>
+                      <span class="value-text">None</span>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="feature-name">Streak Tracking</td>
+                    <td class="feature-value positive">
+                      <span class="check-icon">✅</span>
+                      <span class="value-text">Visual + Analytics</span>
+                    </td>
+                    <td class="feature-value partial">
+                      <span class="partial-icon">⚠️</span>
+                      <span class="value-text">Basic counting</span>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="feature-name">App Blocking</td>
+                    <td class="feature-value positive">
+                      <span class="check-icon">✅</span>
+                      <span class="value-text">Intelligent</span>
+                    </td>
+                    <td class="feature-value partial">
+                      <span class="partial-icon">⚠️</span>
+                      <span class="value-text">Simple blocks</span>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="feature-name">Community Features</td>
+                    <td class="feature-value positive">
+                      <span class="check-icon">✅</span>
+                      <span class="value-text">50K+ Members</span>
+                    </td>
+                    <td class="feature-value negative">
+                      <span class="cross-icon">❌</span>
+                      <span class="value-text">None</span>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="feature-name">Psychology-Based</td>
+                    <td class="feature-value positive">
+                      <span class="check-icon">✅</span>
+                      <span class="value-text">Research-Backed</span>
+                    </td>
+                    <td class="feature-value negative">
+                      <span class="cross-icon">❌</span>
+                      <span class="value-text">Generic approach</span>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Testimonials Section -->
+      <section id="testimonials" class="testimonials-section">
+        <div class="section-container">
+          <div class="section-header">
+            <div class="section-badge">
+              <span class="badge-icon">💬</span>
+              <span class="badge-text">Success Stories</span>
+            </div>
+
+            <h2 class="section-title">
+              Real People,
+              <span class="gradient-text">Real Transformations</span>
+            </h2>
+
+            <p class="section-subtitle">
+              Join thousands who've broken free from phone addiction and
+              unlocked their focus superpowers with Streaky Focus.
+            </p>
+          </div>
+
+          <!-- Testimonials Grid -->
+          <div class="testimonials-grid">
+            <div class="testimonial-card featured">
+              <div class="testimonial-header">
+                <div class="user-info">
+                  <div class="user-avatar">👨‍💻</div>
+                  <div class="user-details">
+                    <h4 class="user-name">Alex Chen</h4>
+                    <p class="user-title">Software Engineer</p>
+                    <div class="user-badges">
+                      <span class="badge streak">127 day streak</span>
+                      <span class="badge achievement">Focus Master</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="testimonial-rating">
+                  <div class="stars">⭐⭐⭐⭐⭐</div>
+                </div>
+              </div>
+
+              <div class="testimonial-content">
+                <blockquote>
+                  "I was spending 8+ hours daily mindlessly scrolling. Streaky
+                  Focus completely rewired my brain. Now I do 4-hour deep work
+                  sessions effortlessly. My productivity increased by 500% and I
+                  finally shipped that side project I'd been putting off for 2
+                  years!"
+                </blockquote>
+              </div>
+
+              <div class="testimonial-metrics">
+                <div class="metric">
+                  <span class="metric-value">8hrs → 2hrs</span>
+                  <span class="metric-label">Daily phone use</span>
+                </div>
+                <div class="metric">
+                  <span class="metric-value">500%</span>
+                  <span class="metric-label">Productivity gain</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="testimonial-card">
+              <div class="testimonial-header">
+                <div class="user-info">
+                  <div class="user-avatar">👩‍🎨</div>
+                  <div class="user-details">
+                    <h4 class="user-name">Sarah Martinez</h4>
+                    <p class="user-title">Creative Director</p>
+                    <div class="user-badges">
+                      <span class="badge streak">89 day streak</span>
+                      <span class="badge achievement">Creative Flow</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="testimonial-rating">
+                  <div class="stars">⭐⭐⭐⭐⭐</div>
+                </div>
+              </div>
+
+              <div class="testimonial-content">
+                <blockquote>
+                  "As a creative, I thought I needed constant stimulation.
+                  Streaky Focus taught me that deep focus unlocks true
+                  creativity. I've produced my best work in years and my anxiety
+                  from social media completely disappeared."
+                </blockquote>
+              </div>
+
+              <div class="testimonial-metrics">
+                <div class="metric">
+                  <span class="metric-value">89 days</span>
+                  <span class="metric-label">Focus streak</span>
+                </div>
+                <div class="metric">
+                  <span class="metric-value">0%</span>
+                  <span class="metric-label">Social media anxiety</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="testimonial-card">
+              <div class="testimonial-header">
+                <div class="user-info">
+                  <div class="user-avatar">👨‍🏫</div>
+                  <div class="user-details">
+                    <h4 class="user-name">Dr. Michael Johnson</h4>
+                    <p class="user-title">University Professor</p>
+                    <div class="user-badges">
+                      <span class="badge streak">156 day streak</span>
+                      <span class="badge achievement">Research Beast</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="testimonial-rating">
+                  <div class="stars">⭐⭐⭐⭐⭐</div>
+                </div>
+              </div>
+
+              <div class="testimonial-content">
+                <blockquote>
+                  "I was skeptical about 'gamification' for focus, but the
+                  psychology behind Streaky Focus is brilliant. My research
+                  output has tripled, and my students noticed I'm more present
+                  during lectures. This app is based on solid behavioral
+                  science."
+                </blockquote>
+              </div>
+
+              <div class="testimonial-metrics">
+                <div class="metric">
+                  <span class="metric-value">3x</span>
+                  <span class="metric-label">Research output</span>
+                </div>
+                <div class="metric">
+                  <span class="metric-value">156 days</span>
+                  <span class="metric-label">Consistency</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="testimonial-card">
+              <div class="testimonial-header">
+                <div class="user-info">
+                  <div class="user-avatar">👩‍💼</div>
+                  <div class="user-details">
+                    <h4 class="user-name">Emma Rodriguez</h4>
+                    <p class="user-title">Marketing Manager</p>
+                    <div class="user-badges">
+                      <span class="badge streak">67 day streak</span>
+                      <span class="badge achievement">Focus Champion</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="testimonial-rating">
+                  <div class="stars">⭐⭐⭐⭐⭐</div>
+                </div>
+              </div>
+
+              <div class="testimonial-content">
+                <blockquote>
+                  "Streaky Focus saved my career. I was constantly distracted,
+                  missing deadlines, and felt overwhelmed. Now I complete
+                  projects ahead of schedule with laser focus. My boss noticed
+                  and I got promoted!"
+                </blockquote>
+              </div>
+
+              <div class="testimonial-metrics">
+                <div class="metric">
+                  <span class="metric-value">100%</span>
+                  <span class="metric-label">On-time delivery</span>
+                </div>
+                <div class="metric">
+                  <span class="metric-value">1</span>
+                  <span class="metric-label">Promotion earned</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="testimonial-card">
+              <div class="testimonial-header">
+                <div class="user-info">
+                  <div class="user-avatar">👨‍🚀</div>
+                  <div class="user-details">
+                    <h4 class="user-name">Jake Thompson</h4>
+                    <p class="user-title">Entrepreneur</p>
+                    <div class="user-badges">
+                      <span class="badge streak">203 day streak</span>
+                      <span class="badge achievement">Startup Founder</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="testimonial-rating">
+                  <div class="stars">⭐⭐⭐⭐⭐</div>
+                </div>
+              </div>
+
+              <div class="testimonial-content">
+                <blockquote>
+                  "Building a startup while battling phone addiction was
+                  impossible. Streaky Focus gave me the deep work skills I
+                  needed. I raised $2M in funding because I could finally
+                  execute consistently on my vision."
+                </blockquote>
+              </div>
+
+              <div class="testimonial-metrics">
+                <div class="metric">
+                  <span class="metric-value">$2M</span>
+                  <span class="metric-label">Funding raised</span>
+                </div>
+                <div class="metric">
+                  <span class="metric-value">203 days</span>
+                  <span class="metric-label">Epic streak</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="testimonial-card">
+              <div class="testimonial-header">
+                <div class="user-info">
+                  <div class="user-avatar">👩‍⚕️</div>
+                  <div class="user-details">
+                    <h4 class="user-name">Dr. Lisa Wang</h4>
+                    <p class="user-title">Medical Resident</p>
+                    <div class="user-badges">
+                      <span class="badge streak">91 day streak</span>
+                      <span class="badge achievement">Study Machine</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="testimonial-rating">
+                  <div class="stars">⭐⭐⭐⭐⭐</div>
+                </div>
+              </div>
+
+              <div class="testimonial-content">
+                <blockquote>
+                  "Medical school + phone addiction = disaster. Streaky Focus
+                  helped me develop the focus discipline needed for studying
+                  complex material. My exam scores improved dramatically and I
+                  actually have time for self-care now."
+                </blockquote>
+              </div>
+
+              <div class="testimonial-metrics">
+                <div class="metric">
+                  <span class="metric-value">25%</span>
+                  <span class="metric-label">Grade improvement</span>
+                </div>
+                <div class="metric">
+                  <span class="metric-value">6hrs+</span>
+                  <span class="metric-label">Daily study focus</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Community Stats -->
+          <div class="community-stats">
+            <h3 class="stats-title">Join the Focus Revolution</h3>
+
+            <div class="stats-grid">
+              <div class="community-stat">
+                <div class="stat-icon">👥</div>
+                <div class="stat-number" data-count="50000">50,000+</div>
+                <div class="stat-label">Active Users</div>
+                <div class="stat-description">Focused achievers worldwide</div>
+              </div>
+
+              <div class="community-stat">
+                <div class="stat-icon">⭐</div>
+                <div class="stat-number" data-count="49">4.9/5</div>
+                <div class="stat-label">App Store Rating</div>
+                <div class="stat-description">Based on 10,000+ reviews</div>
+              </div>
+
+              <div class="community-stat">
+                <div class="stat-icon">🔥</div>
+                <div class="stat-number" data-count="2500000">2.5M+</div>
+                <div class="stat-label">Focus Sessions</div>
+                <div class="stat-description">Completed successfully</div>
+              </div>
+
+              <div class="community-stat">
+                <div class="stat-icon">⚡</div>
+                <div class="stat-number" data-count="500000">500K+</div>
+                <div class="stat-label">Hours Focused</div>
+                <div class="stat-description">Collective deep work time</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Pricing Section -->
+      <section id="pricing" class="pricing-section">
+        <div class="section-container">
+          <div class="section-header">
+            <div class="section-badge">
+              <span class="badge-icon">💎</span>
+              <span class="badge-text">Pricing Plans</span>
+            </div>
+
+            <h2 class="section-title">
+              Choose Your <span class="gradient-text">Focus Journey</span>
+            </h2>
+
+            <p class="section-subtitle">
+              Start free and upgrade when you're ready to unlock advanced
+              features. No tricks, no hidden fees, just pure focus
+              transformation.
+            </p>
+          </div>
+
+          <!-- Pricing Toggle -->
+          <div class="pricing-toggle">
+            <div class="toggle-container">
+              <span class="toggle-label">Monthly</span>
+              <div
+                class="toggle-switch"
+                id="pricing-toggle"
+                onclick="togglePricing()"
+              >
+                <div class="toggle-slider"></div>
+              </div>
+              <span class="toggle-label">
+                Annual
+                <span class="discount-badge">Save 40%</span>
+              </span>
+            </div>
+          </div>
+
+          <!-- Pricing Cards -->
+          <div class="pricing-cards">
+            <div class="pricing-card free">
+              <div class="card-header">
+                <div class="plan-icon">🌱</div>
+                <h3 class="plan-name">Focus Starter</h3>
+                <div class="plan-price">
+                  <span class="price monthly">$0</span>
+                  <span class="price annual hidden">$0</span>
+                  <span class="period monthly">/month</span>
+                  <span class="period annual hidden">/year</span>
+                </div>
+                <p class="plan-description">
+                  Perfect for getting started with basic focus habits
+                </p>
+              </div>
+
+              <div class="card-features">
+                <div class="feature-item">
+                  <span class="feature-check">✅</span>
+                  <span class="feature-text"
+                    >Basic focus timer (25 min sessions)</span
+                  >
+                </div>
+                <div class="feature-item">
+                  <span class="feature-check">✅</span>
+                  <span class="feature-text">7-day streak tracking</span>
+                </div>
+                <div class="feature-item">
+                  <span class="feature-check">✅</span>
+                  <span class="feature-text">Basic app blocking</span>
+                </div>
+                <div class="feature-item">
+                  <span class="feature-check">✅</span>
+                  <span class="feature-text">Daily focus statistics</span>
+                </div>
+                <div class="feature-item limited">
+                  <span class="feature-check">⚠️</span>
+                  <span class="feature-text">5 achievements to unlock</span>
+                </div>
+                <div class="feature-item limited">
+                  <span class="feature-check">❌</span>
+                  <span class="feature-text">No advanced analytics</span>
+                </div>
+                <div class="feature-item limited">
+                  <span class="feature-check">❌</span>
+                  <span class="feature-text">No community features</span>
+                </div>
+              </div>
+
+              <button
+                class="cta-button outline full-width"
+                onclick="startFreeTrial()"
+              >
+                <span class="btn-text">Start Free</span>
+              </button>
+            </div>
+
+            <div class="pricing-card pro featured">
+              <div class="popular-badge">Most Popular</div>
+
+              <div class="card-header">
+                <div class="plan-icon">🚀</div>
+                <h3 class="plan-name">Focus Pro</h3>
+                <div class="plan-price">
+                  <span class="price monthly">$9.99</span>
+                  <span class="price annual hidden">$59.99</span>
+                  <span class="period monthly">/month</span>
+                  <span class="period annual hidden">/year</span>
+                </div>
+                <p class="plan-description">
+                  Ultimate focus toolkit for serious productivity
+                </p>
+              </div>
+
+              <div class="card-features">
+                <div class="feature-item">
+                  <span class="feature-check">✅</span>
+                  <span class="feature-text">Everything in Focus Starter</span>
+                </div>
+                <div class="feature-item">
+                  <span class="feature-check">✅</span>
+                  <span class="feature-text">Unlimited focus sessions</span>
+                </div>
+                <div class="feature-item">
+                  <span class="feature-check">✅</span>
+                  <span class="feature-text">Advanced AI-powered insights</span>
+                </div>
+                <div class="feature-item">
+                  <span class="feature-check">✅</span>
+                  <span class="feature-text">50+ achievement system</span>
+                </div>
+                <div class="feature-item">
+                  <span class="feature-check">✅</span>
+                  <span class="feature-text"
+                    >Community access & challenges</span
+                  >
+                </div>
+                <div class="feature-item">
+                  <span class="feature-check">✅</span>
+                  <span class="feature-text">Custom focus soundscapes</span>
+                </div>
+                <div class="feature-item">
+                  <span class="feature-check">✅</span>
+                  <span class="feature-text">Detailed progress analytics</span>
+                </div>
+                <div class="feature-item">
+                  <span class="feature-check">✅</span>
+                  <span class="feature-text">Priority customer support</span>
+                </div>
+              </div>
+
+              <button
+                class="cta-button primary full-width"
+                onclick="selectPlan('pro')"
+              >
+                <span class="btn-text">Start 7-Day Free Trial</span>
+              </button>
+            </div>
+
+            <div class="pricing-card premium">
+              <div class="card-header">
+                <div class="plan-icon">👑</div>
+                <h3 class="plan-name">Focus Elite</h3>
+                <div class="plan-price">
+                  <span class="price monthly">$19.99</span>
+                  <span class="price annual hidden">$119.99</span>
+                  <span class="period monthly">/month</span>
+                  <span class="period annual hidden">/year</span>
+                </div>
+                <p class="plan-description">
+                  For focus champions who want everything
+                </p>
+              </div>
+
+              <div class="card-features">
+                <div class="feature-item">
+                  <span class="feature-check">✅</span>
+                  <span class="feature-text">Everything in Focus Pro</span>
+                </div>
+                <div class="feature-item">
+                  <span class="feature-check">✅</span>
+                  <span class="feature-text">Personal focus coach (AI)</span>
+                </div>
+                <div class="feature-item">
+                  <span class="feature-check">✅</span>
+                  <span class="feature-text">Advanced habit tracking</span>
+                </div>
+                <div class="feature-item">
+                  <span class="feature-check">✅</span>
+                  <span class="feature-text">Custom achievement creation</span>
+                </div>
+                <div class="feature-item">
+                  <span class="feature-check">✅</span>
+                  <span class="feature-text"
+                    >Team/family sharing (5 accounts)</span
+                  >
+                </div>
+                <div class="feature-item">
+                  <span class="feature-check">✅</span>
+                  <span class="feature-text">White-label focus reports</span>
+                </div>
+                <div class="feature-item">
+                  <span class="feature-check">✅</span>
+                  <span class="feature-text">1-on-1 focus coaching calls</span>
+                </div>
+                <div class="feature-item">
+                  <span class="feature-check">✅</span>
+                  <span class="feature-text"
+                    >Lifetime updates & new features</span
+                  >
+                </div>
+              </div>
+
+              <button
+                class="cta-button premium full-width"
+                onclick="selectPlan('elite')"
+              >
+                <span class="btn-text">Go Elite</span>
+              </button>
+            </div>
+          </div>
+
+          <!-- Money Back Guarantee -->
+          <div class="guarantee-section">
+            <div class="guarantee-badge">
+              <div class="guarantee-icon">🛡️</div>
+              <div class="guarantee-text">
+                <strong>30-Day Money-Back Guarantee</strong>
+                <p>
+                  Try risk-free. If you don't see improved focus in 30 days,
+                  we'll refund every penny.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- FAQ Section -->
+          <div class="faq-section">
+            <h3 class="faq-title">Frequently Asked Questions</h3>
+
+            <div class="faq-grid">
+              <div class="faq-item">
+                <div class="faq-question" onclick="toggleFAQ(this)">
+                  <span class="question-text"
+                    >Can I really break phone addiction with an app?</span
+                  >
+                  <span class="question-toggle">+</span>
+                </div>
+                <div class="faq-answer">
+                  <p>
+                    Yes! We use the same psychology that makes phones addictive,
+                    but redirect it toward building focus habits. Over 50,000
+                    users have successfully transformed their relationship with
+                    technology using our proven system.
+                  </p>
+                </div>
+              </div>
+
+              <div class="faq-item">
+                <div class="faq-question" onclick="toggleFAQ(this)">
+                  <span class="question-text"
+                    >How is this different from other focus apps?</span
+                  >
+                  <span class="question-toggle">+</span>
+                </div>
+                <div class="faq-answer">
+                  <p>
+                    Most apps just block websites or provide basic timers. We
+                    combine behavioral psychology, achievement systems,
+                    community support, and AI-powered insights to create lasting
+                    behavior change, not temporary fixes.
+                  </p>
+                </div>
+              </div>
+
+              <div class="faq-item">
+                <div class="faq-question" onclick="toggleFAQ(this)">
+                  <span class="question-text"
+                    >What if I miss a day and break my streak?</span
+                  >
+                  <span class="question-toggle">+</span>
+                </div>
+                <div class="faq-answer">
+                  <p>
+                    We have streak protection and recovery features! Plus, the
+                    goal isn't perfection—it's progress. Our community and
+                    achievement system are designed to help you bounce back
+                    stronger.
+                  </p>
+                </div>
+              </div>
+
+              <div class="faq-item">
+                <div class="faq-question" onclick="toggleFAQ(this)">
+                  <span class="question-text"
+                    >How quickly will I see results?</span
+                  >
+                  <span class="question-toggle">+</span>
+                </div>
+                <div class="faq-answer">
+                  <p>
+                    Most users notice improved focus within the first week, but
+                    lasting transformation happens over 30 days. Our 30-day
+                    money-back guarantee lets you see the full benefits
+                    risk-free.
+                  </p>
+                </div>
+              </div>
+
+              <div class="faq-item">
+                <div class="faq-question" onclick="toggleFAQ(this)">
+                  <span class="question-text"
+                    >Is my data private and secure?</span
+                  >
+                  <span class="question-toggle">+</span>
+                </div>
+                <div class="faq-answer">
+                  <p>
+                    Absolutely. We use bank-level encryption and never sell your
+                    data. Your focus journey is private, and you can export or
+                    delete your data anytime. Privacy isn't just a feature—it's
+                    our foundation.
+                  </p>
+                </div>
+              </div>
+
+              <div class="faq-item">
+                <div class="faq-question" onclick="toggleFAQ(this)">
+                  <span class="question-text"
+                    >Can I cancel my subscription anytime?</span
+                  >
+                  <span class="question-toggle">+</span>
+                </div>
+                <div class="faq-answer">
+                  <p>
+                    Yes, cancel anytime with one click. No questions asked, no
+                    fees. Even if you cancel, you'll keep all your data and can
+                    reactivate whenever you want.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Download Section -->
+      <section id="download" class="download-section">
+        <div class="section-container">
+          <div class="download-content">
+            <div class="download-header">
+              <div class="section-badge urgent">
+                <span class="badge-icon">🚀</span>
+                <span class="badge-text">Ready to Transform?</span>
+              </div>
+
+              <h2 class="download-title">
+                Download Streaky Focus <span class="gradient-text">Today</span>
+              </h2>
+
+              <p class="download-subtitle">
+                Join 50,000+ people who've already transformed their focus. Your
+                journey to phone addiction freedom starts now.
+              </p>
+            </div>
+
+            <!-- App Store Buttons -->
+            <div class="download-buttons">
+              <a
+                href="#"
+                class="download-button ios"
+                onclick="trackDownload('ios')"
+              >
+                <div class="button-content">
+                  <div class="button-icon">
+                    <svg
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                      fill="currentColor"
+                    >
+                      <path
+                        d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.81-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11z"
+                      />
+                    </svg>
+                  </div>
+                  <div class="button-text">
+                    <span class="button-label">Download on the</span>
+                    <span class="button-title">App Store</span>
+                  </div>
+                </div>
+              </a>
+
+              <a
+                href="#"
+                class="download-button android"
+                onclick="trackDownload('android')"
+              >
+                <div class="button-content">
+                  <div class="button-icon">
+                    <svg
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                      fill="currentColor"
+                    >
+                      <path
+                        d="M3,20.5V3.5C3,2.91 3.34,2.39 3.84,2.15L13.69,12L3.84,21.85C3.34,21.6 3,21.09 3,20.5M16.81,15.12L6.05,21.34L14.54,12.85L16.81,15.12M20.16,10.81C20.5,11.08 20.75,11.5 20.75,12C20.75,12.5 20.53,12.9 20.18,13.18L17.89,14.5L15.39,12L17.89,9.5L20.16,10.81M6.05,2.66L16.81,8.88L14.54,11.15L6.05,2.66Z"
+                      />
+                    </svg>
+                  </div>
+                  <div class="button-text">
+                    <span class="button-label">Get it on</span>
+                    <span class="button-title">Google Play</span>
+                  </div>
+                </div>
+              </a>
+            </div>
+
+            <!-- QR Code Section -->
+            <div class="qr-section">
+              <div class="qr-container">
+                <div class="qr-code">
+                  <div class="qr-placeholder">📱</div>
+                </div>
+                <div class="qr-text">
+                  <p class="qr-title">Scan to Download</p>
+                  <p class="qr-subtitle">Quick access from your phone</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Final Stats -->
+            <div class="final-stats">
+              <div class="final-stat">
+                <span class="stat-number">50K+</span>
+                <span class="stat-text">Downloads</span>
+              </div>
+              <div class="stat-separator">•</div>
+              <div class="final-stat">
+                <span class="stat-number">4.9★</span>
+                <span class="stat-text">Rating</span>
+              </div>
+              <div class="stat-separator">•</div>
+              <div class="final-stat">
+                <span class="stat-number">Free</span>
+                <span class="stat-text">to Start</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="footer-container">
+        <div class="footer-main">
+          <div class="footer-brand">
+            <div class="footer-logo">
+              <div class="logo-icon">
+                <span class="logo-emoji">🎯</span>
+              </div>
+              <div class="brand-info">
+                <h3>Streaky Focus</h3>
+                <p>Transform Phone Addiction into Focus Superpowers</p>
+              </div>
+            </div>
+
+            <p class="footer-description">
+              Join 50,000+ focused achievers who've broken free from phone
+              addiction and unlocked their productivity potential with our
+              revolutionary focus system.
+            </p>
+
+            <div class="footer-social">
+              <a href="#" class="social-link" title="Email Us">
+                <span class="social-icon">📧</span>
+              </a>
+              <a href="#" class="social-link" title="Follow on Twitter">
+                <span class="social-icon">🐦</span>
+              </a>
+              <a href="#" class="social-link" title="Like on Facebook">
+                <span class="social-icon">📘</span>
+              </a>
+              <a href="#" class="social-link" title="Follow on Instagram">
+                <span class="social-icon">📸</span>
+              </a>
+              <a href="#" class="social-link" title="Subscribe on YouTube">
+                <span class="social-icon">📺</span>
+              </a>
+            </div>
+          </div>
+
+          <div class="footer-links">
+            <div class="footer-column">
+              <h4>Product</h4>
+              <a href="#features">Features</a>
+              <a href="#pricing">Pricing</a>
+              <a href="#download">Download</a>
+              <a href="#roadmap">Roadmap</a>
+              <a href="#changelog">Updates</a>
+            </div>
+
+            <div class="footer-column">
+              <h4>Support</h4>
+              <a href="#help">Help Center</a>
+              <a href="#contact">Contact Us</a>
+              <a href="#community">Community</a>
+              <a href="#tutorials">Tutorials</a>
+              <a href="#status">System Status</a>
+            </div>
+
+            <div class="footer-column">
+              <h4>Company</h4>
+              <a href="#about">About Us</a>
+              <a href="#blog">Blog</a>
+              <a href="#careers">Careers</a>
+              <a href="#press">Press Kit</a>
+              <a href="#investors">Investors</a>
+            </div>
+
+            <div class="footer-column">
+              <h4>Legal</h4>
+              <a href="#privacy">Privacy Policy</a>
+              <a href="#terms">Terms of Service</a>
+              <a href="#cookies">Cookie Policy</a>
+              <a href="#security">Security</a>
+              <a href="#gdpr">GDPR</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="footer-bottom">
+          <div class="footer-stats">
+            <div class="footer-stat">
+              <span class="stat-value">50K+</span>
+              <span class="stat-label">Active Users</span>
+            </div>
+            <div class="footer-stat">
+              <span class="stat-value">2.5M+</span>
+              <span class="stat-label">Focus Sessions</span>
+            </div>
+            <div class="footer-stat">
+              <span class="stat-value">500K+</span>
+              <span class="stat-label">Hours Focused</span>
+            </div>
+            <div class="footer-stat">
+              <span class="stat-value">4.9★</span>
+              <span class="stat-label">App Rating</span>
+            </div>
+          </div>
+
+          <div class="footer-copyright">
+            <p>&copy; 2025 Streaky Focus. All rights reserved.</p>
+            <p class="version-info">
+              Version 2.0.1 •
+              <a href="#release-notes">Release Notes</a> • Made with ❤️ for
+              focused achievers
+            </p>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Floating Action Button -->
+    <div class="floating-action-button" id="fab-scroll-to-top">
+      <button class="fab-button" onclick="scrollToTop()">
+        <span class="fab-icon">⬆️</span>
+        <span class="fab-tooltip">Back to Top</span>
+      </button>
+    </div>
+
+    <!-- Toast Notifications Container -->
+    <div id="toast-container" class="toast-container"></div>
+
+    <!-- JavaScript -->
+    <script src="script.js" defer></script>
+
+    <!-- Critical JavaScript for immediate functionality -->
+    <script>
+      // Hide loading screen when page loads
+      window.addEventListener("load", function () {
+        const loadingScreen = document.getElementById("loading-screen");
+        if (loadingScreen) {
+          loadingScreen.style.opacity = "0";
+          setTimeout(() => {
+            loadingScreen.style.display = "none";
+          }, 500);
+        }
+      });
+
+      // Quick mobile menu toggle
+      function toggleMobileMenu() {
+        const overlay = document.getElementById("mobile-menu-overlay");
+        const toggle = document.getElementById("mobile-menu-toggle");
+
+        if (overlay && toggle) {
+          const isOpen = overlay.classList.contains("active");
+
+          if (isOpen) {
+            overlay.classList.remove("active");
+            toggle.classList.remove("active");
+            document.body.style.overflow = "";
+          } else {
+            overlay.classList.add("active");
+            toggle.classList.add("active");
+            document.body.style.overflow = "hidden";
+          }
+        }
+      }
+
+      function closeMobileMenu() {
+        const overlay = document.getElementById("mobile-menu-overlay");
+        const toggle = document.getElementById("mobile-menu-toggle");
+
+        if (overlay && toggle) {
+          overlay.classList.remove("active");
+          toggle.classList.remove("active");
+          document.body.style.overflow = "";
+        }
+      }
+
+      // Scroll functions
+      function scrollToTop() {
+        window.scrollTo({ top: 0, behavior: "smooth" });
+      }
+
+      function scrollToDownload() {
+        document
+          .getElementById("download")
+          ?.scrollIntoView({ behavior: "smooth" });
+      }
+
+      // Show FAB when scrolled
+      window.addEventListener("scroll", function () {
+        const fab = document.getElementById("fab-scroll-to-top");
+        if (fab) {
+          if (window.pageYOffset > 300) {
+            fab.style.opacity = "1";
+            fab.style.transform = "scale(1)";
+          } else {
+            fab.style.opacity = "0";
+            fab.style.transform = "scale(0.8)";
+          }
+        }
+      });
+
+      // Placeholder functions
+      function watchDemo() {
+        alert(
+          "Demo video coming soon! For now, download the app to see it in action."
+        );
+      }
+
+      function startFreeTrial() {
+        scrollToDownload();
+      }
+
+      function selectPlan(plan) {
+        alert(`Selected ${plan} plan! Redirecting to download...`);
+        scrollToDownload();
+      }
+
+      function togglePricing() {
+        const toggle = document.getElementById("pricing-toggle");
+        const monthlyElements = document.querySelectorAll(".monthly");
+        const annualElements = document.querySelectorAll(".annual");
+
+        if (toggle) {
+          toggle.classList.toggle("active");
+          const isAnnual = toggle.classList.contains("active");
+
+          monthlyElements.forEach((el) => {
+            el.classList.toggle("hidden", isAnnual);
+          });
+
+          annualElements.forEach((el) => {
+            el.classList.toggle("hidden", !isAnnual);
+          });
+        }
+      }
+
+      function toggleFAQ(element) {
+        const faqItem = element.parentElement;
+        const answer = faqItem.querySelector(".faq-answer");
+        const toggle = element.querySelector(".question-toggle");
+
+        const isOpen = faqItem.classList.contains("active");
+
+        // Close all other FAQs
+        document.querySelectorAll(".faq-item").forEach((item) => {
+          item.classList.remove("active");
+          item.querySelector(".question-toggle").textContent = "+";
+        });
+
+        if (!isOpen) {
+          faqItem.classList.add("active");
+          toggle.textContent = "−";
+        }
+      }
+
+      function trackDownload(platform) {
+        console.log(`Download tracked: ${platform}`);
+        // Add your analytics tracking here
+      }
+    </script>
+  </body>
+</html>

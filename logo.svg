@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="300" height="80" viewBox="0 0 300 80">
+  <defs>
+    <linearGradient id="g" x1="0" x2="1">
+      <stop offset="0" stop-color="#7c3aed"/>
+      <stop offset="1" stop-color="#06b6d4"/>
+    </linearGradient>
+  </defs>
+  <rect width="100%" height="100%" fill="none" />
+  <text x="8" y="40" font-family="Poppins, Inter, Arial" font-size="28" fill="url(#g)">Streaky Focus</text>
+  <text x="8" y="62" font-family="Inter" font-size="11" fill="#94a3b8">FocusMate — AI + Gamified Streaks</text>
+</svg>
